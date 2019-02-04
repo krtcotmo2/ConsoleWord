@@ -1,4 +1,13 @@
 function Letter(val){
      this.val = val;
-     let found=false;
+     this.found=false;
+     
+     this.getFound = function(){
+          return this.found;
+     }
+     this.setFound = function(bool){
+          this.found = bool;
+     }
 }
+
+module.exports = Letter
